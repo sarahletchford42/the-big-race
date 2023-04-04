@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://cyiop3f7kgbis"]
+
+[ext_resource type="Shader" path="res://images/backgrounds/BG_scroll.gdshader" id="1_dqgqs"]
+[ext_resource type="Texture2D" uid="uid://c1rvvjpxuc0ga" path="res://images/backgrounds/placeholder_BG1.png" id="1_pmsq2"]
+[ext_resource type="PackedScene" uid="uid://dg7xmeyo46eb1" path="res://scenes/player/player.tscn" id="2_q2rhs"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bvepa"]
+shader = ExtResource("1_dqgqs")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rn2hh"]
+size = Vector2(1202, 43)
+
+[node name="Main_Scene" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_base_scale = Vector2(0.5, 1)
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="background_image" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_bvepa")
+position = Vector2(576, 286)
+scale = Vector2(1.08606, 1.08925)
+texture = ExtResource("1_pmsq2")
+region_rect = Rect2(0, 0, 1069.68, 521.383)
+
+[node name="Ground" type="StaticBody2D" parent="."]
+texture_repeat = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+position = Vector2(576, 527)
+shape = SubResource("RectangleShape2D_rn2hh")
+
+[node name="Player" parent="." instance=ExtResource("2_q2rhs")]
+position = Vector2(258, 478)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 351)
+zoom = Vector2(1.5, 1.5)
