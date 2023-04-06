@@ -18,9 +18,9 @@ grow_vertical = 2
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Distance" type="RichTextLabel" parent="CanvasLayer"]
-offset_left = 974.0
+offset_left = 965.0
 offset_top = 86.0
-offset_right = 1053.0
+offset_right = 1044.0
 offset_bottom = 114.0
 text = "Distance:"
 
@@ -33,10 +33,12 @@ offset_bottom = 147.0
 text = "To Next Level:"
 
 [node name="Distance_Value" type="RichTextLabel" parent="CanvasLayer"]
-offset_left = 1058.0
-offset_top = 86.0
-offset_right = 1125.0
-offset_bottom = 115.0
+offset_left = 1040.0
+offset_top = 87.0
+offset_right = 1150.0
+offset_bottom = 116.0
+fit_content = true
+scroll_active = false
 script = ExtResource("1_evb2e")
 speed = 0.1
 
@@ -75,3 +77,5 @@ offset_right = 201.0
 offset_bottom = 185.0
 texture = ExtResource("5_nspj6")
 script = ExtResource("6_xj0fn")
+
+[connection signal="item_clicked" from="CanvasLayer/Inventory" to="CanvasLayer/Inventory" method="_on_item_clicked"]

@@ -16,4 +16,11 @@ func _process(delta):
 		value = float((delta * (speed * 2)))
 		dist_add(value)
 
+func speed_up():
+	speed += .2
+	print(speed)
+	
+func speed_down():
+	speed = speed - .2
+	print(speed)
 

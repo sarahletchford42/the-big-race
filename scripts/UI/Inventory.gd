@@ -10,3 +10,12 @@ func _ready():
 func _process(delta):
 	pass
 
+
+
+func _on_item_clicked(index, at_position, mouse_button_index):
+	var food = get_tree().root.get_node("Main_UI/CanvasLayer/Thought_Bubble/Food_Request")
+	var sp = get_tree().root.get_node("Main_UI/CanvasLayer/Distance_Value")
+	if food.get_texture() == self.get_item_icon(index):
+		sp.speed_down()
+	else:
+		sp.speed_up()
