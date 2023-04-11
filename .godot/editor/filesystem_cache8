@@ -1,0 +1,16 @@
+2a60927148abd1d33b818b535e306557
+::res://::1681229134
+::res://images/::1681228952
+::res://images/spikes/::1681228952
+spike A.png::CompressedTexture2D::8217971256495929359::1427360080::1681227923::1::::<><>::
+spike B.png::CompressedTexture2D::2109146690072633868::1427360092::1681227923::1::::<><>::
+spike C.png::CompressedTexture2D::7275990008853269232::1427360100::1681227923::1::::<><>::
+spike D.png::CompressedTexture2D::2350856487895102424::1427360112::1681227923::1::::<><>::
+::res://scenes/::1681228952
+::res://scenes/obstacles/::1681228952
+floating.tscn::PackedScene::7013120451094540295::1681227971::0::1::::<><>::
+game.tscn::PackedScene::6273745900185398507::1681228186::0::1::::<><>::uid://sntv7b1rfs3m<>uid://dmtf8hosnlutk
+platform.tscn::PackedScene::395323207815003509::1681227971::0::1::::<><>::
+spawner.gd::GDScript::-1::1681227969::0::1::::<>Node2D<>::
+spawner.tscn::PackedScene::1291428904318191684::1681227971::0::1::::<><>::res://scenes/obstacles/spawner.gd
+spike.tscn::PackedScene::8041114258351900360::1681227971::0::1::::<><>::res://Spike.gd<>uid://dbwsq0hxx501y

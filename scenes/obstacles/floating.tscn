@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://c66hcl83gr1wl"]
+
+[sub_resource type="GDScript" id="GDScript_1nwsu"]
+script/source = "#extends CharacterBody2D
+
+
+#const FLOAT_AMPLITUDE = 10
+#const FLOAT_PERIOD = 2
+
+#var position_offset = Vector2.ZERO
+
+#func _physics_process(delta):
+	#var float_offset = Vector2(0, FLOAT_AMPLITUDE * sin(TAU * Engine.get_singleton('OS').get_ticks_usec() / 1000000.0 / FLOAT_PERIOD))
+	#position_offset = float_offset
+	#var motion = position_offset + delta * velocity
+	#var collision = move_and_collide(motion)
+	#if collision:
+		#velocity = Vector2.ZERO
+
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qrr8f"]
+
+[node name="floating" type="CharacterBody2D"]
+script = SubResource("GDScript_1nwsu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qrr8f")

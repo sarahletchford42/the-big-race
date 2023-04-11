@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvnbxcgwwqwk6"]
+
+[ext_resource type="PackedScene" uid="uid://sntv7b1rfs3m" path="res://scenes/obstacles/spawner.tscn" id="1_qsant"]
+[ext_resource type="PackedScene" uid="uid://dmtf8hosnlutk" path="res://scenes/obstacles/spike.tscn" id="2_8poov"]
+
+[node name="game" type="Node2D"]
+
+[node name="Spawner" parent="." instance=ExtResource("1_qsant")]
+position = Vector2(1013, 541)
+scenes_array = [null]
+scene = ExtResource("2_8poov")
