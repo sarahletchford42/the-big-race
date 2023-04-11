@@ -13,8 +13,8 @@ func _process(delta):
 
 
 func _on_item_clicked(index, at_position, mouse_button_index):
-	var food = get_tree().root.get_node("Main_UI/CanvasLayer/Thought_Bubble/Food_Request")
-	var sp = get_tree().root.get_node("Main_UI/CanvasLayer/Distance_Value")
+	var food = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Thought_Bubble/Food_Request")
+	var sp = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Distance_Value")
 	if food.get_texture() == self.get_item_icon(index):
 		sp.speed_down()
 	else:

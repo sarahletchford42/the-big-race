@@ -16,6 +16,9 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+offset = Vector2(155, 110)
+scale = Vector2(0.725, 0.725)
+transform = Transform2D(0.725, 0, 0, 0.725, 155, 110)
 
 [node name="Distance" type="RichTextLabel" parent="CanvasLayer"]
 offset_left = 965.0

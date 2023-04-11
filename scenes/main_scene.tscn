@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cyiop3f7kgbis"]
+[gd_scene load_steps=7 format=3 uid="uid://cyiop3f7kgbis"]
 
 [ext_resource type="Shader" path="res://images/backgrounds/BG_scroll.gdshader" id="1_dqgqs"]
 [ext_resource type="Texture2D" uid="uid://c1rvvjpxuc0ga" path="res://images/backgrounds/placeholder_BG1.png" id="1_pmsq2"]
 [ext_resource type="PackedScene" uid="uid://dg7xmeyo46eb1" path="res://scenes/player/player.tscn" id="2_q2rhs"]
+[ext_resource type="PackedScene" uid="uid://dssw1xv8c6ycs" path="res://scenes/UI/main_ui.tscn" id="4_3nid7"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_bvepa"]
 shader = ExtResource("1_dqgqs")
@@ -38,3 +39,10 @@ position = Vector2(258, 478)
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 351)
 zoom = Vector2(1.5, 1.5)
+
+[node name="Main_UI" parent="Camera2D" instance=ExtResource("4_3nid7")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
