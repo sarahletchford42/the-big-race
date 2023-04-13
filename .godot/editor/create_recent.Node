@@ -1,8 +1,9 @@
+Sprite2D
+TextureRect
+Timer
 VisibleOnScreenNotifier2D
 Area2D
-Timer
 Node2D
 CharacterBody2D
-Sprite2D
 CollisionShape2D
 CollisionPolygon2D

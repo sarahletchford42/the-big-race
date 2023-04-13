@@ -21,10 +21,10 @@ scale = Vector2(0.725, 0.725)
 transform = Transform2D(0.725, 0, 0, 0.725, 155, 110)
 
 [node name="Distance" type="RichTextLabel" parent="CanvasLayer"]
-offset_left = 749.828
-offset_top = -67.1034
-offset_right = 828.828
-offset_bottom = -39.1034
+offset_left = 1321.38
+offset_top = -70.3448
+offset_right = 1400.38
+offset_bottom = -42.3448
 text = "Distance:"
 
 [node name="To_Next_Level" type="RichTextLabel" parent="CanvasLayer"]
@@ -36,10 +36,10 @@ offset_bottom = 147.0
 text = "To Next Level:"
 
 [node name="Distance_Value" type="RichTextLabel" parent="CanvasLayer"]
-offset_left = 824.828
-offset_top = -66.1034
-offset_right = 934.828
-offset_bottom = -37.1034
+offset_left = 1412.41
+offset_top = -70.3448
+offset_right = 1522.41
+offset_bottom = -41.3448
 fit_content = true
 scroll_active = false
 script = ExtResource("1_ves6g")
@@ -54,10 +54,10 @@ offset_bottom = 149.0
 text = "0"
 
 [node name="Inventory" type="ItemList" parent="CanvasLayer"]
-offset_left = -215.172
-offset_top = -153.103
-offset_right = 935.828
-offset_bottom = -81.1034
+offset_left = -215.0
+offset_top = -153.0
+offset_right = 1566.0
+offset_bottom = -81.0
 item_count = 2
 max_columns = 10
 fixed_icon_size = Vector2i(60, 60)
