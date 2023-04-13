@@ -1,11 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://b25pvfbi4s82n"]
+[gd_scene load_steps=7 format=3 uid="uid://dssw1xv8c6ycs"]
 
-[ext_resource type="Script" path="res://scripts/UI/Distance_Value.gd" id="1_evb2e"]
+[ext_resource type="Script" path="res://scenes/UI/Distance_Value.gd" id="1_ves6g"]
 [ext_resource type="Texture2D" uid="uid://bnmnke3i8lpte" path="res://images/UI/food_white.png" id="2_2lrsp"]
 [ext_resource type="Texture2D" uid="uid://bg0cxntrfbsqd" path="res://images/UI/food_red.png" id="3_evuxf"]
-[ext_resource type="Script" path="res://scripts/UI/Inventory.gd" id="4_dk1gu"]
+[ext_resource type="Script" path="res://scenes/UI/Inventory.gd" id="4_v6x2b"]
 [ext_resource type="Texture2D" uid="uid://bw37efe8gtdex" path="res://icon.svg" id="5_nspj6"]
-[ext_resource type="Script" path="res://scripts/UI/Food_Request.gd" id="6_xj0fn"]
+[ext_resource type="Script" path="res://scenes/UI/Food_Request.gd" id="6_xxpus"]
 
 [node name="Main_UI" type="Control"]
 layout_mode = 3
@@ -16,12 +16,15 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+offset = Vector2(155, 110)
+scale = Vector2(0.725, 0.725)
+transform = Transform2D(0.725, 0, 0, 0.725, 155, 110)
 
 [node name="Distance" type="RichTextLabel" parent="CanvasLayer"]
-offset_left = 965.0
-offset_top = 86.0
-offset_right = 1044.0
-offset_bottom = 114.0
+offset_left = 749.828
+offset_top = -67.1034
+offset_right = 828.828
+offset_bottom = -39.1034
 text = "Distance:"
 
 [node name="To_Next_Level" type="RichTextLabel" parent="CanvasLayer"]
@@ -33,13 +36,13 @@ offset_bottom = 147.0
 text = "To Next Level:"
 
 [node name="Distance_Value" type="RichTextLabel" parent="CanvasLayer"]
-offset_left = 1040.0
-offset_top = 87.0
-offset_right = 1150.0
-offset_bottom = 116.0
+offset_left = 824.828
+offset_top = -66.1034
+offset_right = 934.828
+offset_bottom = -37.1034
 fit_content = true
 scroll_active = false
-script = ExtResource("1_evb2e")
+script = ExtResource("1_ves6g")
 speed = 0.1
 
 [node name="To_Next_Level_Value" type="RichTextLabel" parent="CanvasLayer"]
@@ -51,8 +54,10 @@ offset_bottom = 149.0
 text = "0"
 
 [node name="Inventory" type="ItemList" parent="CanvasLayer"]
-offset_right = 1151.0
-offset_bottom = 72.0
+offset_left = -215.172
+offset_top = -153.103
+offset_right = 935.828
+offset_bottom = -81.1034
 item_count = 2
 max_columns = 10
 fixed_icon_size = Vector2i(60, 60)
@@ -60,13 +65,13 @@ item_0/text = ""
 item_0/icon = ExtResource("2_2lrsp")
 item_1/text = ""
 item_1/icon = ExtResource("3_evuxf")
-script = ExtResource("4_dk1gu")
+script = ExtResource("4_v6x2b")
 
 [node name="Thought_Bubble" type="TextureRect" parent="CanvasLayer"]
-offset_left = 241.0
-offset_top = 194.0
-offset_right = 514.0
-offset_bottom = 436.0
+offset_left = 114.483
+offset_top = 286.897
+offset_right = 387.483
+offset_bottom = 528.897
 texture = ExtResource("2_2lrsp")
 
 [node name="Food_Request" type="TextureRect" parent="CanvasLayer/Thought_Bubble"]
@@ -76,6 +81,6 @@ offset_top = 57.0
 offset_right = 201.0
 offset_bottom = 185.0
 texture = ExtResource("5_nspj6")
-script = ExtResource("6_xj0fn")
+script = ExtResource("6_xxpus")
 
 [connection signal="item_clicked" from="CanvasLayer/Inventory" to="CanvasLayer/Inventory" method="_on_item_clicked"]
