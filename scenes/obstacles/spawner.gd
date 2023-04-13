@@ -10,8 +10,8 @@ var Spike = preload("res://scenes/obstacles/spike.tscn")
 var random_scene = RandomNumberGenerator.new()
 var selected_scene_index = 0
 
-var min_spawn_time = 0.5
-var max_spawn_time = 1.3
+var min_spawn_time = 0.7
+var max_spawn_time = 1.5
 
 
 var random_time = RandomNumberGenerator.new()
