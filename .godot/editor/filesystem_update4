@@ -1,2 +1,4 @@
 res://scenes/obstacles/game.tscn
 res://scenes/obstacles/spike.tscn
+res://scenes/obstacles/spawner.gd
+res://scenes/obstacles/spawner.tscn
