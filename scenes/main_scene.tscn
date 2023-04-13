@@ -1,15 +1,16 @@
-[gd_scene load_steps=7 format=3 uid="uid://cyiop3f7kgbis"]
+[gd_scene load_steps=8 format=3 uid="uid://cyiop3f7kgbis"]
 
 [ext_resource type="Shader" path="res://images/backgrounds/BG_scroll.gdshader" id="1_dqgqs"]
 [ext_resource type="Texture2D" uid="uid://c1rvvjpxuc0ga" path="res://images/backgrounds/placeholder_BG1.png" id="1_pmsq2"]
 [ext_resource type="PackedScene" uid="uid://dg7xmeyo46eb1" path="res://scenes/player/player.tscn" id="2_q2rhs"]
 [ext_resource type="PackedScene" uid="uid://dssw1xv8c6ycs" path="res://scenes/UI/main_ui.tscn" id="4_3nid7"]
+[ext_resource type="PackedScene" uid="uid://sntv7b1rfs3m" path="res://scenes/obstacles/spawner.tscn" id="5_n6tfk"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_bvepa"]
 shader = ExtResource("1_dqgqs")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rn2hh"]
-size = Vector2(1202, 43)
+size = Vector2(1202, 44.5)
 
 [node name="Main_Scene" type="Node2D"]
 
@@ -30,8 +31,11 @@ region_rect = Rect2(0, 0, 1069.68, 521.383)
 texture_repeat = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
-position = Vector2(576, 527)
+position = Vector2(576, 526.25)
 shape = SubResource("RectangleShape2D_rn2hh")
+
+[node name="Spawner" parent="." instance=ExtResource("5_n6tfk")]
+position = Vector2(1031, 454)
 
 [node name="Player" parent="." instance=ExtResource("2_q2rhs")]
 position = Vector2(258, 478)

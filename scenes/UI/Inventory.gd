@@ -7,12 +7,12 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass
 
 
 
-func _on_item_clicked(index, at_position, mouse_button_index):
+func _on_item_clicked(index, _at_position, _mouse_button_index):
 	var food = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Thought_Bubble/Food_Request")
 	var sp = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Distance_Value")
 	if food.get_texture() == self.get_item_icon(index):

@@ -21,10 +21,10 @@ scale = Vector2(0.725, 0.725)
 transform = Transform2D(0.725, 0, 0, 0.725, 155, 110)
 
 [node name="Distance" type="RichTextLabel" parent="CanvasLayer"]
-offset_left = 965.0
-offset_top = 86.0
-offset_right = 1044.0
-offset_bottom = 114.0
+offset_left = 749.828
+offset_top = -67.1034
+offset_right = 828.828
+offset_bottom = -39.1034
 text = "Distance:"
 
 [node name="To_Next_Level" type="RichTextLabel" parent="CanvasLayer"]
@@ -36,10 +36,10 @@ offset_bottom = 147.0
 text = "To Next Level:"
 
 [node name="Distance_Value" type="RichTextLabel" parent="CanvasLayer"]
-offset_left = 1040.0
-offset_top = 87.0
-offset_right = 1150.0
-offset_bottom = 116.0
+offset_left = 824.828
+offset_top = -66.1034
+offset_right = 934.828
+offset_bottom = -37.1034
 fit_content = true
 scroll_active = false
 script = ExtResource("1_ves6g")
@@ -54,8 +54,10 @@ offset_bottom = 149.0
 text = "0"
 
 [node name="Inventory" type="ItemList" parent="CanvasLayer"]
-offset_right = 1151.0
-offset_bottom = 72.0
+offset_left = -215.172
+offset_top = -153.103
+offset_right = 935.828
+offset_bottom = -81.1034
 item_count = 2
 max_columns = 10
 fixed_icon_size = Vector2i(60, 60)
@@ -66,10 +68,10 @@ item_1/icon = ExtResource("3_evuxf")
 script = ExtResource("4_v6x2b")
 
 [node name="Thought_Bubble" type="TextureRect" parent="CanvasLayer"]
-offset_left = 241.0
-offset_top = 194.0
-offset_right = 514.0
-offset_bottom = 436.0
+offset_left = 114.483
+offset_top = 286.897
+offset_right = 387.483
+offset_bottom = 528.897
 texture = ExtResource("2_2lrsp")
 
 [node name="Food_Request" type="TextureRect" parent="CanvasLayer/Thought_Bubble"]
