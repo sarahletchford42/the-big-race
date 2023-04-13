@@ -83,4 +83,7 @@ offset_bottom = 185.0
 texture = ExtResource("5_nspj6")
 script = ExtResource("6_xxpus")
 
-[connection signal="item_clicked" from="CanvasLayer/Inventory" to="CanvasLayer/Inventory" method="_on_item_clicked"]
+[node name="Timer" type="Timer" parent="CanvasLayer"]
+
+[connection signal="item_selected" from="CanvasLayer/Inventory" to="CanvasLayer/Inventory" method="_on_item_selected"]
+[connection signal="timeout" from="CanvasLayer/Timer" to="CanvasLayer/Inventory" method="_on_timer_timeout"]
