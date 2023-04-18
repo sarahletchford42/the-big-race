@@ -23,5 +23,9 @@ func _on_timer_timeout():
 	get_tree().root.add_child(Spike_inst)
 	random_time.randomize()
 	var temp = random_time.randf_range(min_spawn_time, max_spawn_time)
+	print(temp)
 	$Timer.wait_time = temp
 	$Timer.start()
+
+
+	

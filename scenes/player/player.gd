@@ -20,3 +20,16 @@ func _physics_process(delta):
 
 
 	move_and_slide()
+
+func hit_by_spike():
+	var particle = get_tree().root.get_node("Main_Scene/Player/GPUParticles2D")
+	particle.set_emitting(true)
+	print("hit")
+	$ColorRect.visible = false
+
+
+
+
+
+
+

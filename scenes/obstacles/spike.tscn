@@ -7,6 +7,8 @@
 size = Vector2(67, 52)
 
 [node name="Spike" type="Area2D"]
+collision_layer = 2
+collision_mask = 3
 script = ExtResource("1_xk4xh")
 
 [node name="spike" type="Sprite2D" parent="."]
@@ -22,4 +24,5 @@ shape = SubResource("RectangleShape2D_65vn2")
 position = Vector2(78, 42)
 
 [connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
