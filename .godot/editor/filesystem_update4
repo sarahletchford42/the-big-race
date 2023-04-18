@@ -1,4 +1,14 @@
+<<<<<<< Updated upstream
 res://scenes/obstacles/spike.tscn
 res://scenes/obstacles/spawner.gd
 res://scenes/obstacles/game.tscn
 res://scenes/obstacles/spawner.tscn
+=======
+res://scenes/player/player.tscn
+res://new_particle_process_material.tres
+res://scenes/player/player.gd
+res://Spike.gd
+res://scenes/main_scene.tscn
+res://scenes/obstacles/spike.tscn
+res://scenes/player/death_particles.tscn
+>>>>>>> Stashed changes

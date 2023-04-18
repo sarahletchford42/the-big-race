@@ -1,3 +1,11 @@
+<<<<<<< Updated upstream
+=======
+GPUParticles2D
+AnimationPlayer
+Sprite2D
+TextureRect
+Timer
+>>>>>>> Stashed changes
 VisibleOnScreenNotifier2D
 Area2D
 Timer

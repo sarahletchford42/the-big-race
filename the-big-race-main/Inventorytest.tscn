@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8jtkawfivtg6"]
+
+[ext_resource type="Texture2D" uid="uid://bnmnke3i8lpte" path="res://images/UI/food_white.png" id="1_nrcmn"]
+[ext_resource type="Texture2D" uid="uid://bg0cxntrfbsqd" path="res://images/UI/food_red.png" id="2_qyobf"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 98.0
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("1_nrcmn")
+
+[node name="Button2" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("2_qyobf")
