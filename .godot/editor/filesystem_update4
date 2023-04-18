@@ -1,5 +1,4 @@
 res://scenes/main_scene.tscn
-res://scenes/UI/Distance_Value.gd
 res://scenes/UI/main_ui.tscn
 res://scenes/UI/Food_Request.gd
 res://scenes/UI/Inventory.gd

@@ -35,11 +35,12 @@ func _on_item_selected(index):
 	var sp = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Distance_Value")
 	var inv = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Inventory")	
 	inv.deselect_all()
+	if inv.is_item_disabled(0) == false:
+		if food.get_texture() == self.get_item_icon(index):
+			sp.speed_down()
+		if food.get_texture() != self.get_item_icon(index):
+			sp.speed_up()
 	for i in range(inv.get_item_count()):
 		inv.set_item_disabled(i, true)
-	timer_start()
 	print("click")
-	if food.get_texture() == self.get_item_icon(index):
-		sp.speed_down()
-	if food.get_texture() != self.get_item_icon(index):
-		sp.speed_up()
+	timer_start()

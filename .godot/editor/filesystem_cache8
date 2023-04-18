@@ -18,7 +18,7 @@ spike D.png::CompressedTexture2D::2350856487895102424::1681374992::1681400926::1
 food_red.png::CompressedTexture2D::2859326409552115619::1681374992::1681400924::1::::<><>::
 food_white.png::CompressedTexture2D::3324455616637209390::1681374992::1681400926::1::::<><>::
 ::res://scenes/::1681414802
-main_scene.tscn::PackedScene::6474766941384121782::1681374992::0::1::::<><>::res://images/backgrounds/BG_scroll.gdshader<>uid://c1rvvjpxuc0ga<>uid://dg7xmeyo46eb1<>uid://dssw1xv8c6ycs<>uid://sntv7b1rfs3m
+main_scene.tscn::PackedScene::6474766941384121782::1681407390::0::1::::<><>::res://images/backgrounds/BG_scroll.gdshader<>uid://c1rvvjpxuc0ga<>uid://dg7xmeyo46eb1<>uid://dssw1xv8c6ycs<>uid://sntv7b1rfs3m
 ::res://scenes/obstacles/::1681414802
 floating.tscn::PackedScene::7013120451094540295::1681374992::0::1::::<><>::
 game.tscn::PackedScene::6273745900185398507::1681374992::0::1::::<><>::uid://sntv7b1rfs3m<>uid://dmtf8hosnlutk
@@ -30,7 +30,7 @@ spike.tscn::PackedScene::8041114258351900360::1681374992::0::1::::<><>::res://Sp
 player.gd::GDScript::-1::1681374992::0::1::::<>CharacterBody2D<>::
 player.tscn::PackedScene::7647873369242677076::1681374992::0::1::::<><>::res://scenes/player/player.gd
 ::res://scenes/UI/::1681414800
-Distance_Value.gd::GDScript::-1::1681374992::0::1::::<>RichTextLabel<>::
-Food_Request.gd::GDScript::-1::1681374992::0::1::::<>TextureRect<>::
-Inventory.gd::GDScript::-1::1681374992::0::1::::<>ItemList<>::
-main_ui.tscn::PackedScene::8461203482600585518::1681374992::0::1::::<><>::res://scenes/UI/Distance_Value.gd<>uid://bnmnke3i8lpte<>uid://bg0cxntrfbsqd<>res://scenes/UI/Inventory.gd<>uid://bw37efe8gtdex<>res://scenes/UI/Food_Request.gd
+Distance_Value.gd::GDScript::-1::1681406406::0::1::::<>RichTextLabel<>::
+Food_Request.gd::GDScript::-1::1681404630::0::1::::<>TextureRect<>::
+Inventory.gd::GDScript::-1::1681407360::0::1::::<>ItemList<>::
+main_ui.tscn::PackedScene::8461203482600585518::1681407472::0::1::::<><>::res://scenes/UI/Distance_Value.gd<>uid://bnmnke3i8lpte<>uid://bg0cxntrfbsqd<>res://scenes/UI/Inventory.gd<>uid://bw37efe8gtdex<>res://scenes/UI/Food_Request.gd
