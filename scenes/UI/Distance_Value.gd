@@ -1,5 +1,6 @@
 extends RichTextLabel
 
+
 var distance = float(1)
 @export var speed : float
 
@@ -12,15 +13,20 @@ func _ready():
 
 
 func _process(delta):
-	for value in delta:
-		value = float((delta * (speed * 2)))
-		dist_add(value)
+	var value = float(delta * speed)
+	dist_add(value)
 
 func speed_up():
-	speed += .2
-	print(speed)
+	if speed < 0.99999:
+		speed += .1
+		print(speed)
+
+	if speed >= 1:
+		speed = 1.0
 	
 func speed_down():
-	speed = speed - .2
-	print(speed)
-
+	if speed > 0.10001:
+		speed = speed - .1
+		print(speed)
+	if speed <= 0:
+		speed = 0.1
