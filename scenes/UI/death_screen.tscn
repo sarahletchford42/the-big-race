@@ -34,6 +34,7 @@ color = Color(0, 0, 0, 0.435294)
 
 [node name="YOU_DIED" type="TextureRect" parent="."]
 top_level = true
+layout_mode = 0
 offset_left = -140.5
 offset_top = 82.5
 offset_right = 469.5
@@ -43,6 +44,7 @@ texture = ExtResource("2_m36bv")
 
 [node name="retry_button" type="Button" parent="."]
 custom_minimum_size = Vector2(500, 100)
+layout_mode = 0
 offset_left = 356.5
 offset_top = 351.5
 offset_right = 856.5
@@ -53,6 +55,7 @@ text = "Retry"
 
 [node name="quit_button" type="Button" parent="."]
 custom_minimum_size = Vector2(500, 100)
+layout_mode = 0
 offset_left = 353.5
 offset_top = 502.5
 offset_right = 853.5

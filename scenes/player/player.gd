@@ -26,10 +26,10 @@ func hit_by_spike():
 	particle.set_emitting(true)
 	print("hit")
 	$ColorRect.visible = false
+	$CollisionShape2D.disabled = false
+	$death_timer.start
 
 
 
-
-
-
-
+func _on_death_timer_timeout():
+	pass # Replace with function body.

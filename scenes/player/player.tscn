@@ -62,3 +62,8 @@ amount = 100
 process_material = SubResource("ParticleProcessMaterial_wlypk")
 texture = ExtResource("2_h458i")
 one_shot = true
+
+[node name="death_timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="death_timer" to="." method="_on_death_timer_timeout"]
