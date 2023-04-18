@@ -1,6 +1,9 @@
 extends TextureRect
 
-
+@onready var thought = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Thought_Bubble")
+@onready var inv = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Inventory")
+@onready var rand_item = randi_range(0, inv.get_item_count())
+@onready var display = inv.get_item_icon(rand_item)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	food()
@@ -11,10 +14,6 @@ func _process(_delta):
 	pass
 
 func food():
-	self.visible = true
-	var thought = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Thought_Bubble")
 	thought.visible = true
-	var inv = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Inventory")
-	var rand_item = randi_range(0, inv.get_item_count())
-	var display = inv.get_item_icon(rand_item)
+	self.visible = true
 	self.set_texture(display)

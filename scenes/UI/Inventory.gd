@@ -1,7 +1,12 @@
 extends ItemList
 
+@onready var timer = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Timer")
+@onready var thought = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Thought_Bubble")
+@onready var food = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Thought_Bubble/Food_Request")
+@onready var inv = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Inventory")
+@onready var sp = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Distance_Value")
 
-# Called when the node enters the scene tree for the first time.
+
 func _ready():
 	pass # Replace with function body.
 
@@ -11,9 +16,6 @@ func _process(_delta):
 	pass
 
 func timer_start():
-	var timer = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Timer")
-	var thought = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Thought_Bubble")
-	var food = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Thought_Bubble/Food_Request")
 	timer.start(randf_range(1, 3))
 	thought.visible = false
 	food.visible = false
@@ -21,9 +23,6 @@ func timer_start():
 
 
 func _on_timer_timeout():
-	var food = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Thought_Bubble/Food_Request")
-	var inv = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Inventory")
-	var timer = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Timer")
 	timer.stop()
 	food.food()
 	for i in range(inv.get_item_count()):
@@ -31,9 +30,6 @@ func _on_timer_timeout():
 
 
 func _on_item_selected(index):
-	var food = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Thought_Bubble/Food_Request")
-	var sp = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Distance_Value")
-	var inv = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Inventory")	
 	inv.deselect_all()
 	if inv.is_item_disabled(0) == false:
 		if food.get_texture() == self.get_item_icon(index):

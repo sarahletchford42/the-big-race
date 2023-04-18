@@ -12,9 +12,8 @@ func _ready():
 
 
 func _process(delta):
-	for value in delta:
-		value = float((delta * (speed * 2)))
-		dist_add(value)
+	var value = float(delta / speed)
+	dist_add(value)
 
 func speed_up():
 	if speed < 0.99999:
