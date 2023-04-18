@@ -7,7 +7,7 @@ func _ready():
 	g_texture_width = texture.get_size().x * scale.x
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	position.x += velocity
 	_attempt_reposition()
 	

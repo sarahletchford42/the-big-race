@@ -1,0 +1,73 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddsojasyohcsu"]
+
+[ext_resource type="Texture2D" uid="uid://c1rvvjpxuc0ga" path="res://images/backgrounds/placeholder_BG1.png" id="1_4qubb"]
+[ext_resource type="Script" path="res://scenes/UI/title_screen.gd" id="1_yhyfl"]
+[ext_resource type="FontFile" uid="uid://cdub2jsf7ac01" path="res://fonts/roses-are-ff0000/RosesareFF0000.ttf" id="2_adw43"]
+[ext_resource type="Script" path="res://scenes/UI/button_grab_focus.gd" id="3_oytea"]
+
+[node name="title_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yhyfl")
+
+[node name="menu_bg" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -12.0
+offset_top = -9.0
+offset_right = 1285.0
+offset_bottom = 733.0
+texture = ExtResource("1_4qubb")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 303.0
+offset_right = 850.0
+offset_bottom = 614.0
+color = Color(0, 0, 0, 0.564706)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 234.0
+offset_top = 83.0
+offset_right = 988.0
+offset_bottom = 214.0
+color = Color(0, 0, 0, 0.564706)
+
+[node name="start_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 434.0
+offset_top = 350.0
+offset_right = 796.0
+offset_bottom = 426.0
+theme_override_fonts/font = ExtResource("2_adw43")
+theme_override_font_sizes/font_size = 40
+text = "Start"
+script = ExtResource("3_oytea")
+
+[node name="quit_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 433.0
+offset_top = 486.0
+offset_right = 795.0
+offset_bottom = 562.0
+theme_override_fonts/font = ExtResource("2_adw43")
+theme_override_font_sizes/font_size = 40
+text = "Quit"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 264.0
+offset_top = 108.0
+offset_right = 964.0
+offset_bottom = 191.0
+theme_override_fonts/font = ExtResource("2_adw43")
+theme_override_font_sizes/font_size = 80
+text = "The Big Race!"
+
+[connection signal="pressed" from="start_button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="quit_button" to="." method="_on_quit_button_pressed"]

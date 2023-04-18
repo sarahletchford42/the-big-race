@@ -4,3 +4,8 @@ res://scenes/UI/main_ui.tscn
 res://scenes/obstacles/spawner.gd
 res://Spike.gd
 res://scenes/background_image1.gd
+res://scenes/UI/title_screen.tscn
+res://scenes/UI/button_grab_focus.gd
+res://scenes/UI/title_screen.gd
+res://scenes/UI/death_screen.tscn
+res://scenes/UI/death_screen.gd

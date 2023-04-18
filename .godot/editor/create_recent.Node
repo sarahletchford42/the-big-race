@@ -1,5 +1,10 @@
-Sprite2D
+CanvasLayer
 TextureRect
+Label
+Button
+RichTextLabel
+ColorRect
+Sprite2D
 Timer
 VisibleOnScreenNotifier2D
 Area2D
