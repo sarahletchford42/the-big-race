@@ -1,36 +1,41 @@
 2a60927148abd1d33b818b535e306557
-::res://::1680195918
-icon.svg::CompressedTexture2D::3990328178091739459::1681374992::1681400924::1::::<><>::
-Inventorytest.tscn::PackedScene::4722403438560732031::1681374992::0::1::::<><>::uid://bnmnke3i8lpte<>uid://bg0cxntrfbsqd
-Spike.gd::GDScript::-1::1681374992::0::1::::<>Area2D<>::
-::res://images/::1681414798
-::res://images/backgrounds/::1681414798
-BG_scroll.gdshader::Shader::-1::1681374992::0::1::::<><>::
-placeholder_BG1.png::CompressedTexture2D::6634158779268225568::1681374992::1681400926::1::::<><>::
-::res://images/misc/::1681414798
-ground.jpg::CompressedTexture2D::1120665283349544694::1681374992::1681400926::1::::<><>::
-::res://images/spikes/::1681414800
-spike A.png::CompressedTexture2D::8217971256495929359::1681374992::1681400926::1::::<><>::
-spike B.png::CompressedTexture2D::2109146690072633868::1681374992::1681400926::1::::<><>::
-spike C.png::CompressedTexture2D::7275990008853269232::1681374992::1681400926::1::::<><>::
-spike D.png::CompressedTexture2D::2350856487895102424::1681374992::1681400926::1::::<><>::
-::res://images/UI/::1681414798
-food_red.png::CompressedTexture2D::2859326409552115619::1681374992::1681400924::1::::<><>::
-food_white.png::CompressedTexture2D::3324455616637209390::1681374992::1681400926::1::::<><>::
-::res://scenes/::1681414802
-main_scene.tscn::PackedScene::6474766941384121782::1681407390::0::1::::<><>::res://images/backgrounds/BG_scroll.gdshader<>uid://c1rvvjpxuc0ga<>uid://dg7xmeyo46eb1<>uid://dssw1xv8c6ycs<>uid://sntv7b1rfs3m
-::res://scenes/obstacles/::1681414802
-floating.tscn::PackedScene::7013120451094540295::1681374992::0::1::::<><>::
-game.tscn::PackedScene::6273745900185398507::1681374992::0::1::::<><>::uid://sntv7b1rfs3m<>uid://dmtf8hosnlutk
-platform.tscn::PackedScene::395323207815003509::1681374992::0::1::::<><>::
-spawner.gd::GDScript::-1::1681374992::0::1::::<>Node2D<>::
-spawner.tscn::PackedScene::1291428904318191684::1681374992::0::1::::<><>::res://scenes/obstacles/spawner.gd
-spike.tscn::PackedScene::8041114258351900360::1681374992::0::1::::<><>::res://Spike.gd<>uid://dbwsq0hxx501y
-::res://scenes/player/::1681414802
-player.gd::GDScript::-1::1681374992::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::7647873369242677076::1681374992::0::1::::<><>::res://scenes/player/player.gd
-::res://scenes/UI/::1681414800
-Distance_Value.gd::GDScript::-1::1681406406::0::1::::<>RichTextLabel<>::
-Food_Request.gd::GDScript::-1::1681404630::0::1::::<>TextureRect<>::
-Inventory.gd::GDScript::-1::1681407360::0::1::::<>ItemList<>::
-main_ui.tscn::PackedScene::8461203482600585518::1681407472::0::1::::<><>::res://scenes/UI/Distance_Value.gd<>uid://bnmnke3i8lpte<>uid://bg0cxntrfbsqd<>res://scenes/UI/Inventory.gd<>uid://bw37efe8gtdex<>res://scenes/UI/Food_Request.gd
+::res://::1680192454
+icon.svg::CompressedTexture2D::3990328178091739459::1681233902::1681233902::1::::<><>::
+Inventorytest.tscn::PackedScene::4722403438560732031::1681233902::0::1::::<><>::uid://bnmnke3i8lpte<>uid://bg0cxntrfbsqd
+Spike.gd::GDScript::-1::1681399658::0::1::::<>Area2D<>::
+::res://export_templates/::1680793596
+::res://feature_profiles/::1680793596
+::res://images/::1681233900
+::res://images/backgrounds/::1681233900
+BG_scroll.gdshader::Shader::-1::1681233902::0::1::::<><>::
+placeholder_BG1.png::CompressedTexture2D::6634158779268225568::1681233902::1681233902::1::::<><>::
+::res://images/misc/::1681233900
+ground.jpg::CompressedTexture2D::1120665283349544694::1681233902::1681233902::1::::<><>::
+::res://images/spikes/::1681234004
+spike A.png::CompressedTexture2D::8217971256495929359::1681234006::1681234006::1::::<><>::
+spike B.png::CompressedTexture2D::2109146690072633868::1681234006::1681234006::1::::<><>::
+spike C.png::CompressedTexture2D::7275990008853269232::1681234006::1681234006::1::::<><>::
+spike D.png::CompressedTexture2D::2350856487895102424::1681234006::1681234006::1::::<><>::
+::res://images/UI/::1681233900
+food_red.png::CompressedTexture2D::2859326409552115619::1681233902::1681233902::1::::<><>::
+food_white.png::CompressedTexture2D::3324455616637209390::1681233902::1681233902::1::::<><>::
+::res://scenes/::1681233900
+background_image1.gd::GDScript::-1::1681405370::0::1::::<>Sprite2D<>::
+main_scene.tscn::PackedScene::6474766941384121782::1681405476::0::1::::<><>::uid://c1rvvjpxuc0ga<>res://scenes/background_image1.gd<>uid://dg7xmeyo46eb1<>uid://dssw1xv8c6ycs<>uid://sntv7b1rfs3m
+::res://scenes/obstacles/::1681234004
+floating.tscn::PackedScene::7013120451094540295::1681234006::0::1::::<><>::
+game.tscn::PackedScene::6273745900185398507::1681234006::0::1::::<><>::uid://sntv7b1rfs3m<>uid://dmtf8hosnlutk
+platform.tscn::PackedScene::395323207815003509::1681234006::0::1::::<><>::
+spawner.gd::GDScript::-1::1681234006::0::1::::<>Node2D<>::
+spawner.tscn::PackedScene::1291428904318191684::1681234006::0::1::::<><>::res://scenes/obstacles/spawner.gd
+spike.tscn::PackedScene::8041114258351900360::1681405476::0::1::::<><>::res://Spike.gd<>uid://dbwsq0hxx501y
+::res://scenes/player/::1681233900
+player.gd::GDScript::-1::1681233902::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7647873369242677076::1681233902::0::1::::<><>::res://scenes/player/player.gd
+::res://scenes/UI/::1681233900
+Distance_Value.gd::GDScript::-1::1681233902::0::1::::<>RichTextLabel<>::
+Food_Request.gd::GDScript::-1::1681399706::0::1::::<>TextureRect<>::
+Inventory.gd::GDScript::-1::1681399706::0::1::::<>ItemList<>::
+main_ui.tscn::PackedScene::8461203482600585518::1681405494::0::1::::<><>::res://scenes/UI/Distance_Value.gd<>uid://bnmnke3i8lpte<>uid://bg0cxntrfbsqd<>res://scenes/UI/Inventory.gd<>uid://bw37efe8gtdex<>res://scenes/UI/Food_Request.gd
+::res://script_templates/::1680793596
+::res://text_editor_themes/::1680793596
