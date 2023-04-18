@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://dssw1xv8c6ycs"]
+[gd_scene load_steps=6 format=3 uid="uid://dssw1xv8c6ycs"]
 
 [ext_resource type="Script" path="res://scenes/UI/Distance_Value.gd" id="1_ves6g"]
 [ext_resource type="Texture2D" uid="uid://bnmnke3i8lpte" path="res://images/UI/food_white.png" id="2_2lrsp"]
 [ext_resource type="Texture2D" uid="uid://bg0cxntrfbsqd" path="res://images/UI/food_red.png" id="3_evuxf"]
 [ext_resource type="Script" path="res://scenes/UI/Inventory.gd" id="4_v6x2b"]
-[ext_resource type="Texture2D" uid="uid://bw37efe8gtdex" path="res://icon.svg" id="5_nspj6"]
 [ext_resource type="Script" path="res://scenes/UI/Food_Request.gd" id="6_xxpus"]
 
 [node name="Main_UI" type="Control"]
@@ -43,7 +42,7 @@ offset_bottom = -37.1034
 fit_content = true
 scroll_active = false
 script = ExtResource("1_ves6g")
-speed = 0.1
+speed = 0.5
 
 [node name="To_Next_Level_Value" type="RichTextLabel" parent="CanvasLayer"]
 visible = false
@@ -80,7 +79,7 @@ offset_left = 73.0
 offset_top = 57.0
 offset_right = 201.0
 offset_bottom = 185.0
-texture = ExtResource("5_nspj6")
+texture = ExtResource("2_2lrsp")
 script = ExtResource("6_xxpus")
 
 [node name="Timer" type="Timer" parent="CanvasLayer"]

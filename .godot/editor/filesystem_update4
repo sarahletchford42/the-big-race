@@ -1,6 +1,6 @@
 res://scenes/main_scene.tscn
-res://scenes/obstacles/spike.tscn
 res://scenes/UI/main_ui.tscn
-res://scenes/obstacles/spawner.gd
-res://Spike.gd
+res://scenes/UI/Food_Request.gd
+res://scenes/UI/Inventory.gd
 res://scenes/background_image1.gd
+res://scenes/UI/Distance_Value.gd
