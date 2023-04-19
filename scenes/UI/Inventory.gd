@@ -23,8 +23,6 @@ func timer_start():
 	thought.visible = false
 	food.visible = false
 
-
-
 func _on_timer_timeout():
 	timer.stop()
 	food.food()

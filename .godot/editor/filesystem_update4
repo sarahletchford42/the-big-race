@@ -1,8 +1,10 @@
 res://scenes/main_scene.tscn
-res://Spike.gd
 res://scenes/obstacles/spike.tscn
 res://scenes/UI/main_ui.tscn
 res://scenes/UI/title_screen.tscn
 res://scenes/UI/death_screen.tscn
-res://scenes/player/player.gd
 res://scenes/player/player.tscn
+res://scenes/player/player.gd
+res://scenes/UI/Inventory.gd
+res://scenes/UI/death_screen.gd
+res://Spike.gd
