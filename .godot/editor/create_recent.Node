@@ -1,4 +1,6 @@
 Timer
+CollisionShape2D
+Area2D
 CanvasLayer
 TextureRect
 Label
@@ -7,8 +9,6 @@ RichTextLabel
 ColorRect
 Sprite2D
 VisibleOnScreenNotifier2D
-Area2D
 Node2D
 CharacterBody2D
-CollisionShape2D
 CollisionPolygon2D

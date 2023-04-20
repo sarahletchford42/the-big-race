@@ -5,6 +5,7 @@ const JUMP_VELOCITY = -500.0
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var dying = null
+var fix = false
 
 func _on_ready():
 	dying = false
@@ -22,15 +23,21 @@ func _physics_process(delta):
 			if velocity.y < -100:
 				velocity.y = -100
 		move_and_slide()
-
-func hit_by_spike():
-	dying = true
-	$GPUParticles2D.set_emitting(true)
-	print("hit")
-	$ColorRect.visible = false
-	get_node("CollisionShape2D").set_deferred("disabled", true)
-	$death_timer.start()
+	else:
+		velocity.y = 0
 
 func _on_death_timer_timeout():
-	dying = false
 	$CanvasLayer/death_screen.visible = true
+
+func _on_area_2d_area_entered(area):
+	if area.is_in_group("spike") and fix:
+		print("hit by: ", area)
+		dying = true
+		$GPUParticles2D.set_emitting(true)
+		$ColorRect.visible = false
+		get_node("Area2D/CollisionShape2D").set_deferred("disabled", true)
+		get_node("CollisionShape2D").set_deferred("disabled", true)
+		$death_timer.start()
+
+func _on_timer_timeout():
+	fix = true

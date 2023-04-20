@@ -5,6 +5,6 @@ res://scenes/UI/title_screen.tscn
 res://scenes/UI/death_screen.tscn
 res://scenes/player/player.tscn
 res://scenes/player/player.gd
-res://scenes/UI/Inventory.gd
-res://scenes/UI/death_screen.gd
 res://Spike.gd
+res://new_particle_process_material.tres
+res://scenes/obstacles/spawner.tscn
