@@ -6,6 +6,7 @@ const JUMP_VELOCITY = -500.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var dying = null
 var fix = false
+var UI
 
 func _on_ready():
 	dying = false
@@ -27,6 +28,7 @@ func _physics_process(delta):
 		velocity.y = 0
 
 func _on_death_timer_timeout():
+	UI.ui_death()
 	$CanvasLayer/death_screen.visible = true
 
 func _on_area_2d_area_entered(area):

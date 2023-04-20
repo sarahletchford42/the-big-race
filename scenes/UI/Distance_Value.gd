@@ -1,16 +1,30 @@
 extends RichTextLabel
 
-
+var ui = null
 var distance = float(1)
 @export var speed : float
+@export var string_dist : String
+@export var final_distance : String
+
+#func _enter_tree():
+	#ui = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer")
 
 func dist_add(dist_added):
 	distance = "%.3f" % (float(distance) + dist_added)
-	set_text(str(distance) + "m")
+	string_dist = str(distance) + "m"
+	set_text(string_dist)
+	
+func ui_death():
+	final_distance = distance
+	print(final_distance)
+	ui.visible = false
+	distance = 0.0000000
 
-func _ready():
-	pass
-
+	
+func on_start():
+	ui.visible = true
+	distance = 1
+	_process(0)
 
 func _process(delta):
 	var value = float(delta * speed)
@@ -30,3 +44,4 @@ func speed_down():
 		print(speed)
 	if speed <= 0:
 		speed = 0.1
+

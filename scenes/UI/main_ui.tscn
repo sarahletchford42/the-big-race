@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://scenes/UI/Inventory.gd" id="4_v6x2b"]
 [ext_resource type="Script" path="res://scenes/UI/Food_Request.gd" id="6_xxpus"]
 
-[node name="Main_UI" type="Control"]
+[node name="Main_UI" type="Control" groups=["ui"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -35,6 +35,7 @@ offset_bottom = 147.0
 text = "To Next Level:"
 
 [node name="Distance_Value" type="RichTextLabel" parent="CanvasLayer"]
+process_mode = 1
 offset_left = 824.828
 offset_top = -66.1034
 offset_right = 934.828

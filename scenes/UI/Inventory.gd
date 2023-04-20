@@ -1,10 +1,10 @@
 extends ItemList
 
-@onready var timer
-@onready var thought
-@onready var food
-@onready var inv
-@onready var sp
+var timer
+var thought
+var food
+var inv
+var sp
 
 
 func _ready():

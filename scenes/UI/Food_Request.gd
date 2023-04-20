@@ -1,9 +1,9 @@
 extends TextureRect
 
-@onready var thought
-@onready var inv
-@onready var rand_item
-@onready var display
+var thought
+var inv
+var rand_item
+var display
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	thought = get_tree().root.get_node("Main_Scene/Camera2D/Main_UI/CanvasLayer/Thought_Bubble")
