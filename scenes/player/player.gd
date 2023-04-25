@@ -6,6 +6,7 @@ const JUMP_VELOCITY = -500.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var dying = null
 var fix = false
+var UI
 
 func _on_ready():
 	dying = false
@@ -28,6 +29,7 @@ func _physics_process(delta):
 
 func _on_death_timer_timeout():
 	#$CanvasLayer/death_screen.visible = true
+	UI.ui_death()
 	var spikes = get_tree().get_nodes_in_group("spike")
 	for spike in spikes:
 		spike.queue_free()
