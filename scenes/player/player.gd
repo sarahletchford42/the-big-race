@@ -26,6 +26,11 @@ func hit_by_spike():
 	particle.set_emitting(true)
 	print("hit")
 	$ColorRect.visible = false
+<<<<<<< Updated upstream
+=======
+	$CollisionShape2D.disabled = false
+#	$death_timer.start
+>>>>>>> Stashed changes
 
 
 

@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dleex0jsoja16"]
+
+[ext_resource type="Texture2D" uid="uid://5bxlqsjqqh7q" path="res://images/spikes/spike B.png" id="1_f6eqg"]
+[ext_resource type="Script" path="res://scenes/obstacles/spike_3.gd" id="1_s4wbx"]
+
+[node name="spike_3" type="Area2D"]
+script = ExtResource("1_s4wbx")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(45, 82, 44, 42, 71, 41, 81, 82, 81, 106, 7, 106, 7, 84, 18, 41, 44, 42)
+
+[node name="spike3" type="Sprite2D" parent="."]
+position = Vector2(44, 73)
+scale = Vector2(0.404891, 0.337179)
+texture = ExtResource("1_f6eqg")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(93, 96)
+
+[connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

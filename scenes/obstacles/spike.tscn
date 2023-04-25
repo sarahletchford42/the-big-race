@@ -1,10 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://dmtf8hosnlutk"]
+[gd_scene load_steps=3 format=3 uid="uid://dmtf8hosnlutk"]
 
 [ext_resource type="Script" path="res://Spike.gd" id="1_xk4xh"]
 [ext_resource type="Texture2D" uid="uid://dbwsq0hxx501y" path="res://images/spikes/spike C.png" id="2_tvolm"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_65vn2"]
-size = Vector2(67, 52)
 
 [node name="Spike" type="Area2D"]
 collision_layer = 2
@@ -16,12 +13,13 @@ position = Vector2(33.5, 25.5)
 scale = Vector2(0.449664, 0.170569)
 texture = ExtResource("2_tvolm")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(34, 26)
-shape = SubResource("RectangleShape2D_65vn2")
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(34, 27)
+scale = Vector2(1.00189, 1.0375)
+polygon = PackedVector2Array(11, 11, 32.8359, 12.0482, 20.8586, -8.19277, 0, -25.0602, -21, -8, -33.0393, 12.0482, -33.0393, 22.6506, 32.8359, 22.6506)
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(78, 42)
+position = Vector2(78, 41)
 
 [connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,6 @@
+res://scenes/main_scene.tscn
+res://scenes/obstacles/spike.tscn
+res://scenes/UI/main_ui.tscn
+res://scenes/UI/title_screen.tscn
+res://scenes/UI/death_screen.tscn
+res://scenes/player/player.tscn

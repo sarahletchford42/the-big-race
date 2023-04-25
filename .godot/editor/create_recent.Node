@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 GPUParticles2D
 AnimationPlayer
@@ -9,8 +10,20 @@ Timer
 VisibleOnScreenNotifier2D
 Area2D
 Timer
+=======
+VisibleOnScreenNotifier2D
+Sprite2D
+CollisionPolygon2D
+Area2D
+Timer
+CanvasLayer
+TextureRect
+Label
+Button
+RichTextLabel
+ColorRect
+>>>>>>> Stashed changes
 Node2D
 CharacterBody2D
 Sprite2D
 CollisionShape2D
-CollisionPolygon2D
