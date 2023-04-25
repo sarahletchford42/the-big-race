@@ -18,15 +18,18 @@ func _process(delta):
 
 func speed_up():
 	if speed < 0.99999:
-		speed += .1
+		speed += .2
 		print(speed)
 
 	if speed >= 1:
 		speed = 1.0
 	
 func speed_down():
-	if speed > 0.10001:
-		speed = speed - .1
+	if speed > -7:
+		speed = speed - .05
 		print(speed)
-	if speed <= 0:
-		speed = 0.1
+	else:
+		speed = -7
+
+func _on_slow_down_timeout():
+	speed_down()

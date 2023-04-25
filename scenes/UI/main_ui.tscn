@@ -82,7 +82,12 @@ offset_bottom = 185.0
 texture = ExtResource("2_2lrsp")
 script = ExtResource("6_xxpus")
 
+[node name="SlowDown" type="Timer" parent="CanvasLayer"]
+wait_time = 3.1
+autostart = true
+
 [node name="Timer" type="Timer" parent="CanvasLayer"]
 
 [connection signal="item_selected" from="CanvasLayer/Inventory" to="CanvasLayer/Inventory" method="_on_item_selected"]
+[connection signal="timeout" from="CanvasLayer/SlowDown" to="CanvasLayer/Distance_Value" method="_on_slow_down_timeout"]
 [connection signal="timeout" from="CanvasLayer/Timer" to="CanvasLayer/Inventory" method="_on_timer_timeout"]
