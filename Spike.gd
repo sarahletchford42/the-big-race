@@ -5,9 +5,7 @@ var velocity: float = 266
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if not get_tree().current_scene.name == "main_ui":
-		print(get_tree().current_scene.name)
 		var speed = 0 if null else get_tree().get_first_node_in_group("get_speed").speed
-		print(speed)
 		position.x -= (velocity * speed + velocity) * delta
 
 func _on_body_entered(_body):

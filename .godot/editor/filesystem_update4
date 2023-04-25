@@ -9,3 +9,5 @@ res://Spike.gd
 res://scenes/UI/Inventory.gd
 res://scenes/player/player.gd
 res://scenes/UI/Distance_Value.gd
+res://scenes/background_image1.gd
+res://scenes/UI/title_screen.gd

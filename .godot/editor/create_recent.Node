@@ -1,4 +1,5 @@
 Timer
+AudioStreamPlayer
 CollisionShape2D
 Area2D
 CanvasLayer

@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://cyiop3f7kgbis"]
+[gd_scene load_steps=8 format=3 uid="uid://cyiop3f7kgbis"]
 
 [ext_resource type="Texture2D" uid="uid://c1rvvjpxuc0ga" path="res://images/backgrounds/placeholder_BG1.png" id="1_pmsq2"]
 [ext_resource type="Script" path="res://scenes/background_image1.gd" id="2_k16wl"]
 [ext_resource type="PackedScene" uid="uid://dg7xmeyo46eb1" path="res://scenes/player/player.tscn" id="2_q2rhs"]
 [ext_resource type="PackedScene" uid="uid://dssw1xv8c6ycs" path="res://scenes/UI/main_ui.tscn" id="4_3nid7"]
 [ext_resource type="PackedScene" uid="uid://sntv7b1rfs3m" path="res://scenes/obstacles/spawner.tscn" id="5_n6tfk"]
+[ext_resource type="AudioStream" uid="uid://cxsus3tygx32a" path="res://audio/gameloop.wav" id="6_2oq6c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rn2hh"]
 size = Vector2(1202, 44.5)
@@ -48,3 +49,7 @@ anchor_bottom = 0.0
 grow_horizontal = 1
 grow_vertical = 1
 metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_2oq6c")
+autoplay = true
