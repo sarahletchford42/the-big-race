@@ -1,10 +1,10 @@
 extends ItemList
 
-@onready var timer
-@onready var thought
-@onready var food
-@onready var inv
-@onready var sp
+var timer
+var thought
+var food
+var inv
+var sp
 
 
 func _ready():
@@ -34,9 +34,9 @@ func _on_item_selected(index):
 	inv.deselect_all()
 	if inv.is_item_disabled(0) == false:
 		if food.get_texture() == self.get_item_icon(index):
-			sp.speed_down()
-		if food.get_texture() != self.get_item_icon(index):
 			sp.speed_up()
+		if food.get_texture() != self.get_item_icon(index):
+			sp.speed_down()
 	for i in range(inv.get_item_count()):
 		inv.set_item_disabled(i, true)
 	timer_start()

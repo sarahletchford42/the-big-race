@@ -34,7 +34,7 @@ offset_right = 1060.0
 offset_bottom = 147.0
 text = "To Next Level:"
 
-[node name="Distance_Value" type="RichTextLabel" parent="CanvasLayer"]
+[node name="Distance_Value" type="RichTextLabel" parent="CanvasLayer" groups=["get_speed"]]
 offset_left = 824.828
 offset_top = -66.1034
 offset_right = 934.828

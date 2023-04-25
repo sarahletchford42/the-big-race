@@ -27,7 +27,12 @@ func _physics_process(delta):
 		velocity.y = 0
 
 func _on_death_timer_timeout():
-	$CanvasLayer/death_screen.visible = true
+	#$CanvasLayer/death_screen.visible = true
+	var spikes = get_tree().get_nodes_in_group("spike")
+	for spike in spikes:
+		spike.queue_free()
+	var death = get_tree().get_first_node_in_group("death")
+	death.go()
 
 func _on_area_2d_area_entered(area):
 	if area.is_in_group("spike") and fix:
@@ -38,6 +43,11 @@ func _on_area_2d_area_entered(area):
 		get_node("Area2D/CollisionShape2D").set_deferred("disabled", true)
 		get_node("CollisionShape2D").set_deferred("disabled", true)
 		$death_timer.start()
+		var spikes = get_tree().get_nodes_in_group("spike")
+		for spike in spikes:
+			spike.queue_free()
 
 func _on_timer_timeout():
+	#FIXES SPONTANEOUS EXPLOSION BUG
+	#DO NOT MESS WITH
 	fix = true
