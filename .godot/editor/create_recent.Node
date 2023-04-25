@@ -1,0 +1,15 @@
+AnimatedSprite2D
+Timer
+CollisionShape2D
+Area2D
+CanvasLayer
+TextureRect
+Label
+Button
+RichTextLabel
+ColorRect
+Sprite2D
+VisibleOnScreenNotifier2D
+Node2D
+CharacterBody2D
+CollisionPolygon2D

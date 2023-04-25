@@ -1,6 +1,64 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=3 format=3 uid="uid://dg7xmeyo46eb1"]
 
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_yokth"]
+=======
+[gd_scene load_steps=18 format=3 uid="uid://dg7xmeyo46eb1"]
+
+[ext_resource type="Script" path="res://scenes/player/player.gd" id="1_yokth"]
+[ext_resource type="Texture2D" uid="uid://byctjlsdnvbug" path="res://images/player sprites/adventurer_walk1.png" id="2_5st7y"]
+[ext_resource type="Texture2D" uid="uid://cakydgdpc8kjy" path="res://images/player sprites/adventurer_fall.png" id="2_a2mvc"]
+[ext_resource type="Texture2D" uid="uid://bnmnke3i8lpte" path="res://images/UI/food_white.png" id="2_h458i"]
+[ext_resource type="Texture2D" uid="uid://da507at66ila" path="res://images/player sprites/adventurer_jump.png" id="2_w6aeq"]
+[ext_resource type="PackedScene" uid="uid://cr8yxxl2fsc7m" path="res://scenes/UI/death_screen.tscn" id="3_hb4gh"]
+[ext_resource type="Texture2D" uid="uid://benkox2680onn" path="res://images/player sprites/adventurer_walk2.png" id="3_t58go"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_71y84"]
+atlas = ExtResource("2_a2mvc")
+region = Rect2(0, 0, 80, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x1iqa"]
+atlas = ExtResource("2_w6aeq")
+region = Rect2(0, 0, 80, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4f0ec"]
+atlas = ExtResource("2_5st7y")
+region = Rect2(0, 0, 80, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4y8vk"]
+atlas = ExtResource("3_t58go")
+region = Rect2(0, 0, 80, 110)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_stmm7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_71y84")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x1iqa")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4f0ec")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4y8vk")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+>>>>>>> Stashed changes
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_caj2x"]
 size = Vector2(20, 37)
@@ -8,12 +66,11 @@ size = Vector2(20, 37)
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_yokth")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -9.0
-offset_top = -18.0
-offset_right = 9.0
-offset_bottom = 18.0
-color = Color(0.862745, 0.0784314, 0.431373, 1)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1.90735e-06, -4)
+scale = Vector2(0.5125, 0.472727)
+sprite_frames = SubResource("SpriteFrames_stmm7")
+animation = &"fall"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -0.5)
