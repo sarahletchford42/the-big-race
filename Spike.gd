@@ -1,14 +1,22 @@
 extends Area2D
 
-var speed: float = 400
+var velocity: float = 266
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	position.x -= speed * delta
+	if not get_tree().current_scene.name == "main_ui":
+		print(get_tree().current_scene.name)
+		var speed = 0 if null else get_tree().get_first_node_in_group("get_speed").speed
+		print(speed)
+		position.x -= (velocity * speed + velocity) * delta
 
 func _on_body_entered(_body):
-	if _body.is_in_group("player"):
+	if _body.is_in_group("obstacles"):
+		print("hit")
 		queue_free()
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free() 
+	
+func die():
+	queue_free()

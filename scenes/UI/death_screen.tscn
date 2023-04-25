@@ -4,7 +4,7 @@
 [ext_resource type="FontFile" uid="uid://cdub2jsf7ac01" path="res://fonts/roses-are-ff0000/RosesareFF0000.ttf" id="2_8c1oy"]
 [ext_resource type="Texture2D" uid="uid://d32358uirtn3w" path="res://images/UI/you_died!.png" id="2_m36bv"]
 
-[node name="death_screen" type="Control"]
+[node name="death_screen" type="Control" groups=["death"]]
 process_mode = 3
 visible = false
 layout_mode = 3

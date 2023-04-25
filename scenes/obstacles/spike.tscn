@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://Spike.gd" id="1_xk4xh"]
 [ext_resource type="Texture2D" uid="uid://dbwsq0hxx501y" path="res://images/spikes/spike C.png" id="2_tvolm"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_65vn2"]
-size = Vector2(67, 52)
+[sub_resource type="CircleShape2D" id="CircleShape2D_g6ndt"]
+radius = 30.7002
 
 [node name="Spike" type="Area2D" groups=["spike"]]
 collision_layer = 2
@@ -17,11 +17,11 @@ scale = Vector2(0.449664, 0.170569)
 texture = ExtResource("2_tvolm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(34, 26)
-shape = SubResource("RectangleShape2D_65vn2")
+position = Vector2(33, 33)
+shape = SubResource("CircleShape2D_g6ndt")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(78, 42)
+position = Vector2(77, 41)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

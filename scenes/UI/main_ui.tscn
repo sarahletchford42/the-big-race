@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://scenes/UI/Inventory.gd" id="4_v6x2b"]
 [ext_resource type="Script" path="res://scenes/UI/Food_Request.gd" id="6_xxpus"]
 
-[node name="Main_UI" type="Control" groups=["ui"]]
+[node name="Main_UI" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -34,8 +34,7 @@ offset_right = 1060.0
 offset_bottom = 147.0
 text = "To Next Level:"
 
-[node name="Distance_Value" type="RichTextLabel" parent="CanvasLayer"]
-process_mode = 1
+[node name="Distance_Value" type="RichTextLabel" parent="CanvasLayer" groups=["get_speed"]]
 offset_left = 824.828
 offset_top = -66.1034
 offset_right = 934.828
@@ -83,7 +82,12 @@ offset_bottom = 185.0
 texture = ExtResource("2_2lrsp")
 script = ExtResource("6_xxpus")
 
+[node name="SlowDown" type="Timer" parent="CanvasLayer"]
+wait_time = 3.1
+autostart = true
+
 [node name="Timer" type="Timer" parent="CanvasLayer"]
 
 [connection signal="item_selected" from="CanvasLayer/Inventory" to="CanvasLayer/Inventory" method="_on_item_selected"]
+[connection signal="timeout" from="CanvasLayer/SlowDown" to="CanvasLayer/Distance_Value" method="_on_slow_down_timeout"]
 [connection signal="timeout" from="CanvasLayer/Timer" to="CanvasLayer/Inventory" method="_on_timer_timeout"]
