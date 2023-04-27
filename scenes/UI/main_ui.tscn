@@ -1,9 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://dssw1xv8c6ycs"]
+[gd_scene load_steps=12 format=3 uid="uid://dssw1xv8c6ycs"]
 
 [ext_resource type="Script" path="res://scenes/UI/Distance_Value.gd" id="1_ves6g"]
 [ext_resource type="Texture2D" uid="uid://bnmnke3i8lpte" path="res://images/UI/food_white.png" id="2_2lrsp"]
+[ext_resource type="Texture2D" uid="uid://bgfa5gwds27xf" path="res://images/UI/food_blue.png" id="2_exgn0"]
 [ext_resource type="Texture2D" uid="uid://bg0cxntrfbsqd" path="res://images/UI/food_red.png" id="3_evuxf"]
+[ext_resource type="Texture2D" uid="uid://bb7b1nm7n8pcj" path="res://images/UI/food_orange.png" id="3_w6nkc"]
+[ext_resource type="Texture2D" uid="uid://gcnl13vqanpc" path="res://images/UI/food_green.png" id="4_bstgo"]
 [ext_resource type="Script" path="res://scenes/UI/Inventory.gd" id="4_v6x2b"]
+[ext_resource type="Texture2D" uid="uid://2xdextxcgjxu" path="res://images/UI/food_purple.png" id="5_c6b1f"]
+[ext_resource type="Texture2D" uid="uid://b2uv8w77lrjjd" path="res://images/UI/food_teal.png" id="6_7ggep"]
+[ext_resource type="Texture2D" uid="uid://b5hxbfpopwx15" path="res://images/UI/food_yellow.png" id="6_l0pit"]
 [ext_resource type="Script" path="res://scenes/UI/Food_Request.gd" id="6_xxpus"]
 
 [node name="Main_UI" type="Control"]
@@ -57,13 +63,23 @@ offset_left = -215.172
 offset_top = -153.103
 offset_right = 935.828
 offset_bottom = -81.1034
-item_count = 2
+item_count = 7
 max_columns = 10
 fixed_icon_size = Vector2i(60, 60)
 item_0/text = ""
-item_0/icon = ExtResource("2_2lrsp")
+item_0/icon = ExtResource("3_evuxf")
 item_1/text = ""
-item_1/icon = ExtResource("3_evuxf")
+item_1/icon = ExtResource("3_w6nkc")
+item_2/text = ""
+item_2/icon = ExtResource("6_l0pit")
+item_3/text = ""
+item_3/icon = ExtResource("4_bstgo")
+item_4/text = ""
+item_4/icon = ExtResource("6_7ggep")
+item_5/text = ""
+item_5/icon = ExtResource("2_exgn0")
+item_6/text = ""
+item_6/icon = ExtResource("5_c6b1f")
 script = ExtResource("4_v6x2b")
 
 [node name="Thought_Bubble" type="TextureRect" parent="CanvasLayer"]
@@ -83,7 +99,7 @@ texture = ExtResource("2_2lrsp")
 script = ExtResource("6_xxpus")
 
 [node name="SlowDown" type="Timer" parent="CanvasLayer"]
-wait_time = 1.5
+wait_time = 1.4
 autostart = true
 
 [node name="Timer" type="Timer" parent="CanvasLayer"]

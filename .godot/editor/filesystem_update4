@@ -1,13 +1,8 @@
+res://scenes/UI/main_ui.tscn
 res://scenes/main_scene.tscn
 res://scenes/obstacles/spike.tscn
-res://scenes/UI/main_ui.tscn
 res://scenes/UI/title_screen.tscn
 res://scenes/UI/death_screen.tscn
 res://scenes/player/player.tscn
 res://scenes/obstacles/spawner.tscn
-res://Spike.gd
-res://scenes/UI/Inventory.gd
-res://scenes/player/player.gd
 res://scenes/UI/Distance_Value.gd
-res://scenes/background_image1.gd
-res://scenes/UI/title_screen.gd

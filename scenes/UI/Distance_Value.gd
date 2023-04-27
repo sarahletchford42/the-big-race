@@ -31,7 +31,7 @@ func speed_up():
 func speed_down():
 	if speed > -6.999999:
 		if thought.visible:
-			speed = speed - .25
+			speed = speed - .17
 			print("DOWN EXTRA!")
 		else:
 			speed = speed - .05
