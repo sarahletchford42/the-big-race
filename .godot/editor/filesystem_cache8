@@ -28,6 +28,11 @@ BG_scroll.gdshader::Shader::-1::1681836622::0::1::::<><>::
 placeholder_BG1.png::CompressedTexture2D::6634158779268225568::1681836622::1681836622::1::::<><>::
 ::res://images/misc/::1681233900
 ground.jpg::CompressedTexture2D::1120665283349544694::1681836622::1681836622::1::::<><>::
+::res://images/player sprites/::1682606542
+adventurer_fall.png::CompressedTexture2D::4794948030594936762::1682606542::1682606762::1::::<><>::
+adventurer_jump.png::CompressedTexture2D::212434367197845598::1682606542::1682606762::1::::<><>::
+adventurer_walk1.png::CompressedTexture2D::4076251987239541642::1682606542::1682606762::1::::<><>::
+adventurer_walk2.png::CompressedTexture2D::2694646391290709879::1682606542::1682606762::1::::<><>::
 ::res://images/spikes/::1681234004
 spike A.png::CompressedTexture2D::8217971256495929359::1681234006::1681234006::1::::<><>::
 spike B.png::CompressedTexture2D::2109146690072633868::1681234006::1681234006::1::::<><>::
@@ -45,27 +50,27 @@ food_yellow.png::CompressedTexture2D::4507935200185874702::1682605052::168260505
 you_died!.png::CompressedTexture2D::9182043286472038698::1681834672::1681834676::1::::<><>::
 ::res://scenes/::1681233900
 background_image1.gd::GDScript::-1::1682441422::0::1::::<>Sprite2D<>::
-main_scene.tscn::PackedScene::6474766941384121782::1682605822::0::1::::<><>::uid://c1rvvjpxuc0ga<>res://scenes/background_image1.gd<>uid://dg7xmeyo46eb1<>uid://dssw1xv8c6ycs<>uid://sntv7b1rfs3m<>uid://cxsus3tygx32a
+main_scene.tscn::PackedScene::6474766941384121782::1682606076::0::1::::<><>::uid://c1rvvjpxuc0ga<>res://scenes/background_image1.gd<>uid://dg7xmeyo46eb1<>uid://dssw1xv8c6ycs<>uid://sntv7b1rfs3m<>uid://cxsus3tygx32a
 ::res://scenes/obstacles/::1681234004
 floating.tscn::PackedScene::7013120451094540295::1681234006::0::1::::<><>::
 game.tscn::PackedScene::6273745900185398507::1681859602::0::1::::<><>::uid://sntv7b1rfs3m
 platform.tscn::PackedScene::395323207815003509::1681234006::0::1::::<><>::
 spawner.gd::GDScript::-1::1681859602::0::1::::<>Node2D<>::
-spawner.tscn::PackedScene::1291428904318191684::1682605824::0::1::::<><>::res://scenes/obstacles/spawner.gd<>uid://dmtf8hosnlutk
-spike.tscn::PackedScene::8041114258351900360::1682605824::0::1::::<><>::res://Spike.gd<>uid://dbwsq0hxx501y
+spawner.tscn::PackedScene::1291428904318191684::1682606078::0::1::::<><>::res://scenes/obstacles/spawner.gd<>uid://dmtf8hosnlutk
+spike.tscn::PackedScene::8041114258351900360::1682606076::0::1::::<><>::res://Spike.gd<>uid://dbwsq0hxx501y
 ::res://scenes/player/::1681233900
 death_particles.tscn::PackedScene::7918594665163296601::1681859602::0::1::::<><>::
 player.gd::GDScript::-1::1682437448::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::7647873369242677076::1682605824::0::1::::<><>::res://scenes/player/player.gd<>uid://bnmnke3i8lpte<>uid://cr8yxxl2fsc7m
+player.tscn::PackedScene::7647873369242677076::1682606078::0::1::::<><>::res://scenes/player/player.gd<>uid://bnmnke3i8lpte<>uid://cr8yxxl2fsc7m
 ::res://scenes/UI/::1681233900
 button_grab_focus.gd::GDScript::-1::1681832956::0::1::::<>Button<>::
 death_screen.gd::GDScript::-1::1682009840::0::1::::<>Control<>::
-death_screen.tscn::PackedScene::6035675682466983892::1682605824::0::1::::<><>::res://scenes/UI/death_screen.gd<>uid://cdub2jsf7ac01<>uid://d32358uirtn3w
+death_screen.tscn::PackedScene::6035675682466983892::1682606078::0::1::::<><>::res://scenes/UI/death_screen.gd<>uid://cdub2jsf7ac01<>uid://d32358uirtn3w
 Distance_Value.gd::GDScript::-1::1682605862::0::1::::<>RichTextLabel<>::
 Food_Request.gd::GDScript::-1::1682006956::0::1::::<>TextureRect<>::
 Inventory.gd::GDScript::-1::1682444834::0::1::::<>ItemList<>::
-main_ui.tscn::PackedScene::8461203482600585518::1682605862::0::1::::<><>::res://scenes/UI/Distance_Value.gd<>uid://bnmnke3i8lpte<>uid://bgfa5gwds27xf<>uid://bg0cxntrfbsqd<>uid://gcnl13vqanpc<>res://scenes/UI/Inventory.gd<>uid://2xdextxcgjxu<>uid://b5hxbfpopwx15<>res://scenes/UI/Food_Request.gd
+main_ui.tscn::PackedScene::8461203482600585518::1682606142::0::1::::<><>::res://scenes/UI/Distance_Value.gd<>uid://bnmnke3i8lpte<>uid://bgfa5gwds27xf<>uid://bg0cxntrfbsqd<>uid://bb7b1nm7n8pcj<>uid://gcnl13vqanpc<>res://scenes/UI/Inventory.gd<>uid://2xdextxcgjxu<>uid://b2uv8w77lrjjd<>uid://b5hxbfpopwx15<>res://scenes/UI/Food_Request.gd
 title_screen.gd::GDScript::-1::1682441772::0::1::::<>Control<>::
-title_screen.tscn::PackedScene::7407853520526267288::1682605824::0::1::::<><>::uid://c1rvvjpxuc0ga<>res://scenes/UI/title_screen.gd<>uid://cdub2jsf7ac01<>res://scenes/UI/button_grab_focus.gd
+title_screen.tscn::PackedScene::7407853520526267288::1682606078::0::1::::<><>::uid://c1rvvjpxuc0ga<>res://scenes/UI/title_screen.gd<>uid://cdub2jsf7ac01<>res://scenes/UI/button_grab_focus.gd
 ::res://script_templates/::1680793596
 ::res://text_editor_themes/::1680793596

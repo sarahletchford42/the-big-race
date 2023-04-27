@@ -6,6 +6,7 @@ const JUMP_VELOCITY = -500.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var dying = null
 var fix = false
+@onready var anim_node = $AnimatedSprite2D
 
 func _on_ready():
 	dying = false
@@ -25,6 +26,14 @@ func _physics_process(delta):
 		move_and_slide()
 	else:
 		velocity.y = 0
+	if is_on_floor():
+		anim_node.play("walk")
+		
+	if Input.is_action_pressed("ui_select"):
+		anim_node.play("jump")
+	
+	if Input.is_action_just_released("ui_select"):
+		anim_node.play("fall")
 
 func _on_death_timer_timeout():
 	#$CanvasLayer/death_screen.visible = true
@@ -39,7 +48,7 @@ func _on_area_2d_area_entered(area):
 		print("hit by: ", area)
 		dying = true
 		$GPUParticles2D.set_emitting(true)
-		$ColorRect.visible = false
+		$AnimatedSprite2D.visible = false
 		get_node("Area2D/CollisionShape2D").set_deferred("disabled", true)
 		get_node("CollisionShape2D").set_deferred("disabled", true)
 		$death_timer.start()
